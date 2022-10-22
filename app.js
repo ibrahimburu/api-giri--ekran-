@@ -6,6 +6,6 @@ const port = process.env.port||8080;
 app.use(express.json());
 app.use('/users',router);
 app.use('/verify',router);
-app.listen(port,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(`http://localhost:${port}/`)
 })
